@@ -51,6 +51,6 @@ int main()
 	double da	= 0.5*basic;
 	double pf	= 0.11*basic;
 	double totalSalary = (basic+hra+da+bonus-pf);
-	int ans  = round(totalSalary);
-	cout<<setprecision(9)<<ans<<endl;
+	int ans  = round(totalSalary); //Because the problem says to round-off the answer.
+	cout<<setprecision(9)<<ans<<endl; //We need to use setprecision lest the compiler may throw errors or test case will fail. 
 }
