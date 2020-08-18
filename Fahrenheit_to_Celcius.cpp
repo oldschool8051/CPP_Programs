@@ -30,7 +30,7 @@ int s,e,w,j;
 cin>>s>>e>>w;
 for(j=s;j<=e;j+=w)//j=0
 {
-int c=(5.0/9)*(j-32);
+int c=(5.0/9)*(j-32); 
 cout<<j<<" "<<c<<endl;
 }
 }
