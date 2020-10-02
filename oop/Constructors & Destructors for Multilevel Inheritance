@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class A{
+protected:
+int x;
+public:
+A(){
+cout<<"\n constructer of A is invoked:\n";
+}
+public:
+~A(){
+cout<<"\n destructer of A is invoked:\n";
+
+}
+};
+class B{
+protected:
+int y;
+public:
+B(){
+cout<<"\n constructer of B is invoked:\n";}
+public:
+~B(){
+cout<<"\n destructer of B is invoked:\n";}
+};
+class C:public A,public B{
+protected:
+int z;
+public:
+C(){
+cout<<"\n constructer of C is invoked:\n";}
+public:
+~C(){
+cout<<"\n destructer of C is invoked:\n";
+}
+};
+int main(){
+cout<<"\n\norder of constructers for multiple inheritance:\n\n";
+C t;
+return 0;
+}
