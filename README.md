@@ -1,2 +1,2 @@
 # CPP_Programs
-# CAN BE USED FOR HACKTOBERFEST 2020 
+### This part contains the common CPP Programs for practice.
