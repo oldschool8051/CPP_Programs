@@ -22,27 +22,22 @@ For the given input, the even digits are 2, 2 and 4 and if we take the sum of th
 
 #include <iostream>
 using namespace std;
-
 int main()
 {
-	int n,sum1=0,sum2=0,odd,even,i;
+	int n,sum1=0,sum2=0;
 	cin>>n;
 	while(n>0)
 	{
-		i = n%10;
+		int i = n%10;
 		if(i%2==0)
 		{
-			even = i;
-			sum1 += even; //Even sum
+			sum1=sum1+i; //Even sum
 		}
 		if(i%2!=0)
 		{
-			odd = i;
-			sum2 += odd;  //Odd sum	
+			sum2=sum2+i;  //Odd sum	
 		}
-		
 		n=n/10;
 	}
 	cout<<sum1<<" "<<sum2<<endl;
-	
 }
